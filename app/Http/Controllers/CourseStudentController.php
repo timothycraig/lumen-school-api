@@ -12,14 +12,6 @@ class CourseStudentController extends Controller
         return __METHOD__;
     }
 
-    public function show () {
-        return __METHOD__;
-    }
-
-    public function update () {
-        return __METHOD__;
-    }
-
     public function destroy () {
         return __METHOD__;
     }

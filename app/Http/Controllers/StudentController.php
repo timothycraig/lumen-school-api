@@ -2,13 +2,31 @@
 
 namespace App\Http\Controllers;
 
+use App\Student;
+
 class StudentController extends Controller
 {
     public function index () {
-        return __METHOD__;
+        $students = Student::all();
+
+        return $this->createSuccessResponse($students, 200);
+    }
+
+    public function show ($id) {
+        $student = Student::find($id);
+
+        if ($student) {
+            return $this->createSuccessResponse($student, 200);
+        }
+
+        return $this->createErrorResponse("The student with id {$id} does not exist", 404);
     }
 
     public function store () {
+        return __METHOD__;
+    }
+
+    public function update () {
         return __METHOD__;
     }
 
