@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Teacher;
-
 use Illuminate\Http\Request;
+
+use App\Teacher;
 
 class TeacherController extends Controller
 {
