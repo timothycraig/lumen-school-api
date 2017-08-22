@@ -5,10 +5,23 @@
 ```bash
 cd lumen-school-api
 valet park
+```
+
+### Create mysql database
+
+```bash
+brew services start mysql
+CREATE DATABASE lumen_school_api_dev
+```
+
+### Configure local environment
+```bash
 cp .env.example. .env
 ```
 
-create mysql database and update `.env` file. 
+##### Update `.env` with database creds and `APP_Key`
+
+### Run migrations and seed data
 
 ```bash
 php artisan migrate
